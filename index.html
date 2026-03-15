@@ -1,0 +1,153 @@
+<!--
+Name: Brenda Constantino Madrigal
+Class: CS-135
+Term Project
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Buon Cibo | Authentic Italian</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+
+<button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<ul id="navMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="order.html">Order</a></li>
+</ul>
+
+</nav>
+
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero container text-center py-5">
+
+<h1>
+<img src="img/logo_1.png" alt="Buon Cibo Logo">
+</h1>
+
+<p class="subtitle">Fresh ingredients. Timeless tradition.</p>
+
+</section>
+
+
+<!-- IMAGE GRID (12 COLUMN SYSTEM) -->
+<section class="container py-4">
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="card-img-container">
+<img src="img/2.jpg" class="img-fluid" alt="Eating Pasta">
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-img-container">
+<img src="img/dinnerset.jpg" class="img-fluid" alt="Dinner Set">
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-img-container">
+<img src="img/model1.png" class="img-fluid" alt="Model eating pasta">
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="content container py-5">
+<div class="row justify-content-center">
+<div class="col-md-8 text-center">
+
+<h2 id="theGreeting">Benvenuti!</h2>
+
+<div class="description">
+
+<p>
+At Buon Cibo, we celebrate the simple beauty of authentic Italian cooking. 
+Inspired by the kitchens of Naples and the countryside of central Italy, our menu is built around fresh ingredients, handmade pasta, and time-honored techniques passed down through generations.
+</p>
+
+<p>
+We believe great food begins with care — from ripe olive oils and fragrant clary sage to locally sourced produce and slow-simmered sauces. Every dish is prepared with patience and intention, allowing the natural flavors to shine.
+</p>
+
+<p>
+Whether you're gathering with friends over a bowl of pasta, enjoying a quiet dinner, or sharing a bottle of wine, Buon Cibo is a place where tradition, warmth, and hospitality come together at the table.
+</p>
+
+</div>
+
+<div class="actions mt-4">
+
+<a href="order.html">
+<button type="button" id="btnGreetMe">Order</button>
+<a href="#">
+<button type="button" id="btnGreetMe">Make A Reservation</button>
+</a>
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer text-center py-4">
+
+<p>Hours: 2PM–11PM MONDAY–SATURDAY</p>
+<p>12PM–10PM SUNDAYS</p>
+<p>© 2026 Buon Cibo</p>
+<p>Authentic Italian Kitchen</p>
+
+</footer>
+
+</main>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+navMenu.classList.toggle("active");
+});
+
+</script>
+
+</body>
+</html>

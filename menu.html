@@ -1,0 +1,137 @@
+<!--
+MENU PAGE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brenda Constantino Madrigal">
+    <title>Buon Cibo | Authentic Italian</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+    </ul>
+
+</nav>
+        
+<main>
+    <section class="hero">
+        <h1> 
+            <img src="img/logo_1.png">
+        </h1>
+        <p class="subtitle">Fresh ingredients. Timeless tradition.</p>
+        </section>
+    </main>
+<main class="container py-5">
+
+        <!-- Hero image -->
+        <div class="heroshot">
+            <img id="mainImage" src="img/6.png" alt="Handmade Pasta">
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="content">
+        <h2 id="theGreeting">Welcome, check out our Menu!</h2>
+        <div class="description">
+            <p>
+            Everything on this menu begins with a question: <em>where did this come from?</em> 
+            Our pasta is hand-rolled daily. Our vegetables arrive from farms within 60 miles. 
+            Our recipes trace back to the hills of Umbria — and our commitment to the 
+            Pacific Northwest means they taste like nowhere else on earth.
+            </p>
+        </div>
+
+        <div class="actions">
+            <a href="img/menu.jpg" download>
+            <button type="button" id="btnGreetMe">Download Menu</button>
+        </a>
+        <div class="actions">
+            <a href="#">
+                <button type="button" id="btnGreetMe">Make a Reservation</button>
+        </a>
+        </div>
+    </section>
+</main>
+<!-- TESTIMONIALS / REVIEWS -->
+<section class="testimonials container py-5">
+
+    <h2 class="text-center mb-4">What Our Guests Are Saying</h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="review-card">
+                <p>★★★★★</p>
+                <p>
+                    "The pasta tastes like it came straight from Italy. 
+                    Fresh, flavorful, and beautifully presented."
+                </p>
+                <p class="reviewer">— Sarah M.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="review-card">
+                <p>★★★★★</p>
+                <p>
+                    "Perfect date-night restaurant. The atmosphere is warm, 
+                    elegant, and the food is incredible."
+                </p>
+                <p class="reviewer">— Daniel R.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="review-card">
+                <p>★★★★★</p>
+                <p>
+                    "I love their farm-to-table approach. You can truly taste 
+                    the freshness of the ingredients."
+                </p>
+                <p class="reviewer">— Emily L.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer> 
+    <p> Hours: 2PM-11PM MONDAY-SATURDAY, 12PM-10PM SUNDAYS</p> 
+      <p>© 2026 Buon Cibo</p>
+      <p>Authentic Italian Kitchen</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+    
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+    
+    </script>
+    
+</body>
+</html>

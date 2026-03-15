@@ -1,0 +1,382 @@
+// Colors /
+$ripe-olive: #417625;
+$clary-sage: #9BBFA0;
+$alabaster: #f8f6f2;
+$accessible-beige: #D7D2CB;
+$deep-umber: #36190F;
+$white: #ffffff;
+
+// font / typography //
+$font-body: Arial, Helvetica, sans-serif;
+$font-nav: 'Lato', sans-serif;
+$font-serif: 'Playfair Display', 'Times New Roman', serif;
+
+// space // 
+$spacing-sm: 10px;
+$spacing-md: 20px;
+$spacing-lg: 40px;
+$spacing-xl: 50px;
+
+// breakpoints //
+$mobile: 768px;
+
+
+// base section //
+body {
+    background-color: $alabaster;
+    color: $ripe-olive;
+    margin: 0;
+    padding: 0;
+    font-family: $font-body;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: $clary-sage;
+    color: $deep-umber;
+    text-align: center;
+    padding: $spacing-lg $spacing-md;
+    margin-top: $spacing-xl;
+  
+    font-family: $font-nav;
+    letter-spacing: 1px;
+  
+    p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  
+    a {
+      color: $deep-umber;
+      text-decoration: none;
+      font-weight: bold;
+  
+      &:hover {
+        color: $ripe-olive;
+      }
+    }
+  }
+// nav //
+nav {
+    background-color: $white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    ul {
+        margin: 0;
+        padding: $spacing-md;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        background-color: $ripe-olive;
+
+        li {
+            a {
+                color: $alabaster;
+                font-family: $font-nav;
+                font-size: 14px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: $spacing-sm 15px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $clary-sage;
+                }
+            }
+        }
+    }
+}
+
+
+// heading //
+h1 {
+    text-align: center;
+    font-size: 64px;
+    color: $deep-umber;
+    margin-top: $spacing-xl;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+
+    img {
+        width: 500px;
+        height: 100%;
+    }
+}
+
+
+h2 {
+    text-align: center;
+    color: $deep-umber;
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-sm;
+    letter-spacing: -1px;
+}
+
+
+// content //
+content {
+    text-align: center;
+}
+
+.subtitle {
+    font-family: $font-serif;
+    text-align: center;
+    font-style: italic;
+    color: $ripe-olive;
+    margin-bottom: $spacing-lg;
+}
+
+.card-img-container {
+    width: 100%;
+    height: 500px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center; 
+        border-radius: 4px;
+        margin: 0;
+    }
+}
+
+.heroshot { 
+    width:auto;
+    height:auto;
+}
+
+.description {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: $spacing-md;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+//  cta buttons //
+.actions {
+    text-align: center;
+    margin: $spacing-lg 0;
+}
+
+button {
+    background-color: $clary-sage;
+    color: $white;
+    border: none;
+    padding: 12px 30px;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 $spacing-sm;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $ripe-olive;
+    }
+}
+
+// review // 
+
+.testimonials {
+  background-color: $alabaster;
+  padding: 60px 0;
+  text-align: center;
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    color: $deep-umber;
+  }
+
+  .review-card {
+    background: $white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-family: $font-body;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    p:first-child {
+      font-size: 20px;
+      color: $ripe-olive;
+      letter-spacing: 2px;
+    }
+
+    .reviewer {
+      font-style: italic;
+      color: $deep-umber;
+      margin-top: 10px;
+    }
+  }
+}
+
+// responsive //
+@media only screen and (max-width: $mobile) {
+    h1 { font-size: 40px; }
+
+    nav ul {
+        flex-direction: column;
+        padding: $spacing-sm;
+
+        li { margin: $spacing-sm 0; }
+    }
+
+    img { width: 80%; }
+}
+
+//  logo in secondary page  //
+.site-logo {
+    display: block;
+    margin: 0 auto $spacing-sm;
+    width: 500px;
+    max-width: 100%;
+    border: none; 
+}
+
+// logo // 
+.heroshot {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 4px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        margin: 0;       
+        border: none;
+        border-radius: 0;
+    }
+}
+
+.py-5 // header in the order page // 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:900;
+}
+
+/* cards */
+  .cards {
+    transition: transform .10s ease, box-shadow .10s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,.35);
+  }
+  
+  /* hover animation */
+  .cards:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 18px 28px rgba(0,0,0,.6);
+  }
+  
+  .cards img {
+    width: 100%;
+    height: 560px;     
+    object-fit: cover; 
+    display: block;
+  }
+  
+  /* text area */
+  .cards h2{
+    margin: .8rem;
+    color: #e0b84c;
+  }
+  
+  .cards p {
+    margin: .8rem;
+    color: #cfcfcf;
+  }
+  
+  strong{
+    font-weight: bold;
+    color: #ffcc55;
+  }
+  
+/* hamburger icon (hidden on desktop) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 15px;
+  
+    span {
+      width: 25px;
+      height: 3px;
+      background-color: $alabaster;
+      border-radius: 3px;
+      display: block;
+    }
+  }
+  
+  /* MOBILE */
+  @media only screen and (max-width: $mobile) {
+  
+    nav {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    /* show hamburger */
+    .hamburger {
+      display: flex;
+    }
+  
+    /* hide nav menu initially */
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $ripe-olive;
+      padding: $spacing-sm 0;
+      text-align: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    /* show menu when active */
+    nav ul.active {
+      display: flex;
+    }
+  
+    .hero img{
+        max-width: 260px;
+        margin-bottom: 10px;
+        }
+        
+        .subtitle{
+        font-style: italic;
+        margin-bottom: 30px;
+        }
+        
+        .card-img-container img{
+        width:100%;
+        height:300px;
+        object-fit:cover;
+        border-radius:6px;
+        }
+        
+        .site-footer{
+        background:#9BBFA0;
+        padding:30px;
+        }
+        
+    
+  }
