@@ -246,9 +246,7 @@ button {
 
 
 // cards image section bootstrap // 
-.cards {
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+
 
   &:hover {
     transform: translateY(-6px) scale(1.02);
@@ -257,7 +255,7 @@ button {
 
   img {
     width: 100%;
-    height: 100%;
+    height: 600px;
     object-fit: cover;
     display: block;
   }
